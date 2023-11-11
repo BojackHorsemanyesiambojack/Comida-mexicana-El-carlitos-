@@ -1,0 +1,23 @@
+#Co
+{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+
+}
+
+#Carlitos
+{
+    font-family: 'Catamaran', sans-serif;
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+}
+
+body
+{
+    background-image:url(Background.jpg);
+    background-size:cover;
+}
