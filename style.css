@@ -4,7 +4,12 @@
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'Nosifer', sans-serif;
     font-family: 'Playpen Sans', cursive;
+text-align: left;
+}
 
+h1, h2, p 
+{
+    text-align: center;
 }
 
 #Carlitos
@@ -14,10 +19,103 @@ font-family: 'IBM Plex Mono', monospace;
 font-family: 'Nosifer', sans-serif;
 font-family: 'Playpen Sans', cursive;
 font-family: 'Satisfy', cursive;
+position: relative;
+bottom: 30px;
+left: 30px;
+text-align: left;
+}
+
+.Icon
+{
+    width: 45px;
+    height: 45px;
 }
 
 body
 {
     background-image:url(Background.jpg);
     background-size:cover;
+    padding: 20px;
+    background-color: coral;
+}
+
+.Titles
+{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.Menu
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding: auto;
+    background-color: rgba(192, 181, 25, 0.63);
+    width: 80%;
+    max-width: 500px;
+}
+
+.Menu p
+{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.FoodTitle
+{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Satisfy', cursive;
+    
+}
+.Food
+{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Satisfy', cursive;
+    width: 75%;
+    font-size: larger;
+    text-align: left;
+}
+.Price
+{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Satisfy', cursive;
+    text-align: right;
+    width: 25%;
+    
+}
+
+.Menudiv
+{
+    height: 30px;
+    width: 100%;
+}
+
+.headerFood
+{
+    justify-content:center;
+    display: flex;
+    
+    align-items: center;
+}
+
+.headerFood h2
+{
+    padding: 10px;
 }
