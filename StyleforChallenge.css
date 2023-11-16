@@ -1,0 +1,15 @@
+body
+{
+    background-image:url(Background.jpg);
+    background-size:cover;
+    padding: 20px;
+    background-color: coral;
+    font-family: 'Satisfy', cursive;
+    color: black;
+
+}
+
+#Challenge
+{
+    background-color:  rgba(192, 181, 25, 0.63);
+}

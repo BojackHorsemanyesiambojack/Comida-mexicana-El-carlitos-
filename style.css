@@ -71,19 +71,10 @@ body
 
 .FoodTitle
 {
-    font-family: 'Catamaran', sans-serif;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Nosifer', sans-serif;
-    font-family: 'Playpen Sans', cursive;
     font-family: 'Satisfy', cursive;
-    
 }
 .Food
 {
-    font-family: 'Catamaran', sans-serif;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Nosifer', sans-serif;
-    font-family: 'Playpen Sans', cursive;
     font-family: 'Satisfy', cursive;
     width: 75%;
     font-size: larger;
@@ -91,10 +82,6 @@ body
 }
 .Price
 {
-    font-family: 'Catamaran', sans-serif;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Nosifer', sans-serif;
-    font-family: 'Playpen Sans', cursive;
     font-family: 'Satisfy', cursive;
     text-align: right;
     width: 25%;
@@ -118,4 +105,12 @@ body
 .headerFood h2
 {
     padding: 10px;
+}
+
+.Chall
+{
+    justify-content: right;
+    display: flex;
+    align-items: flex-end;
+    font-family:'Satisfy',cursive;
 }
