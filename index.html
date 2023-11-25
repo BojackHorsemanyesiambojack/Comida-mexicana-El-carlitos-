@@ -3,74 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Background.jpg">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=IBM+Plex+Mono:ital,wght@1,200&family=Nosifer&family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=IBM+Plex+Mono:ital,wght@1,200&family=Nosifer&family=Playpen+Sans:wght@300&family=Satisfy&display=swap" rel="stylesheet">
-<title>Comida mexicana "El Carlitos"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Logo.png">
+    <title>Home-Comida Mexicana "El Carlitos"</title>
 </head>
 <body>
-<!--=====Titulo====-->
-    <div>
-
-        <h1 id="Co"><span style="color: green;">Comi</span><span style="color: white;">da Me</span><span style="color: red;">xicana</span></h1>
-        <h1 id="Carlitos" ><span style="color: rgb(201, 114, 15);">El Carlitos</span></h1>
-        
-    </div>
-<!--=====Titulo====-->
-
-
-    <div class="Menudiv">
-<main>
-    <section class="Menu">
-        <h1 Class="Titles">Menu</h1>
-        <hr class="menudiv">
-        <article>
-            <div class="headerFood">
-                <img src="taco.png" alt="Taco icon" class="Icon">
-                <h2 class="FoodTitle">Tacos</h2>
+    <header>
+        <img src="Logo.png" alt="Logo image">
+        <h2>Comida Mexicana</h2><h3>"El carlitos"</h3>
+        <!--This is a burger button-->
+        <div class="movil">
+            <input type="checkbox" id="btn_menu">
+            <label for="btn_menu" class="btn_menu flex_column">
+                <span id="btn_span_1" class="btn_span"></span>
+                <span id="btn_span_2" class="btn_span"></span>
+                <span id="btn_span_3" class="btn_span"></span>
+            </label>
+            <div class="container_flex">
+                <nav>
+                    <ul class="container_menu flex_column">
+                        <li><a href="#">inicio</a></li>
+                        <li><a href="#">nosotros</a></li>
+                        <li><a href="#">diseños</a></li>
+                        <li><a href="#">contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-            <hr class="menudiv">
-            <p class="Food"><b>Al pastor</b></p><p class="Price">40 Cordobas</p>
-            <p class="Food"><b>De res</b></p><p class="Price">30 Cordobas</p>
-            <p class="Food"><b>De pollo</b></p><p class="Price">30 Cordobas</p>
-            <hr class="menudiv">
-        </article>
-        <div class="headerFood">
-        <img src="burrito.png" alt="Burrito icon" class="Icon"><h2 class="FoodTitle">Burritos</h2>
+        </div>
+    </header>
+
+<section id="M-left">
+    <div class="Menu-left">
+            <div class="FoodTitle">
+                <hr class="menudiv">
+                <h1>Menu</h1>
+                    <hr class="menudiv">
+            </div>
+            <div class="FoodSection-title">
+                <img src="taco.png" class="icon"><h3>Tacos</h3>
+            </div>
+            <div class="FoodSection-element">
+                <h4>De pollo</h4> <h4>35 Cordobas</h4> 
+            </div>
+            <div class="FoodSection-element">
+        <h4>De res</h4>   <h4>35 Cordobas</h4>
+        </div>
+        <div class="FoodSection-element">
+        <h4>De Frijoles</h4>   <h4>35 Cordobas</h4>
         </div>
         <hr class="menudiv">
-        <article>
-            <p class="Food"><b>De frijoles</b></p><p class="Price">40 Cordobas</p>
-            <p class="Food"><b>De Pollo</b></p><p class="Price">30 Cordobas</p>
-            <p class="Food"><b>Special Carlos burrito</b></p><p class="Price">85 Cordobas</p>
-            <p class="Food"><b> Super Hot Special Carlos burrito</b></p><p class="Price"><span style="color:red">Limited Offert! <del>150</del> 120 cordobas</span></p>
-            <hr class="menudiv">
-
-        </article>
-
-        <div class="headerFood">
-            <img src="chimichanga.png" alt="Chimichanga icon" class="Icon"><h2 class="FoodTitle">Chimichangas</h2>
-            </div>
-            <hr class="menudiv">
-            <article>
-                <p class="Food"><b>De Camaron</b></p><p class="Price">40 Cordobas</p>
-                <p class="Food"><b>De Pollo</b></p><p class="Price">30 Cordobas</p>
-                <p class="Food"><b>Special Carlos Chimichanga</b></p><p class="Price">85 Cordobas</p>
-            </article>
-    </section>
-</main>
-
-</div>
-
-<div class="Chall">
-    <h2><a href="Challenge.html">Super Carlos Hot Challenge!!!</a></h2>
-</div>
-
-
+        <div class="FoodSection-title">
+            <img src="burrito.png" class="icon"> <h3>Burritos</h3>
+        </div>
+        <div class="FoodSection-element">
+            <h4>De frijoles</h4> <h4>120 Cordobas</h4>
+        </div>
+        <div class="FoodSection-element">
+            <h4>De res</h4> <h4>120 Cordobas</h4>
+        </div>
+        <div class="FoodSection-element">
+            <h4>De pollo</h4> <h4>120 Cordobas</h4>
+        </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>

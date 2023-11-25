@@ -1,116 +1,255 @@
-#Co
-{
-    font-family: 'Catamaran', sans-serif;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Nosifer', sans-serif;
-    font-family: 'Playpen Sans', cursive;
-text-align: left;
-}
+/*Elements*/
 
-h1, h2, p 
-{
-    text-align: center;
-}
-
-#Carlitos
-{
-    font-family: 'Catamaran', sans-serif;
-font-family: 'IBM Plex Mono', monospace;
-font-family: 'Nosifer', sans-serif;
-font-family: 'Playpen Sans', cursive;
-font-family: 'Satisfy', cursive;
-position: relative;
-bottom: 30px;
-left: 30px;
-text-align: left;
-}
-
-.Icon
-{
-    width: 45px;
-    height: 45px;
-}
 
 body
 {
-    background-image:url(Background.jpg);
-    background-size:cover;
-    padding: 20px;
-    background-color: coral;
+margin:0;
+background-image:url("background.jpg");
+background-size: cover;
 }
 
-.Titles
+h1,h2,h3,h4,p
 {
-    font-family: 'Catamaran', sans-serif;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Nosifer', sans-serif;
-    font-family: 'Playpen Sans', cursive;
-    font-family: 'Satisfy', cursive;
-    text-align: center;
-    margin-left:auto;
-    margin-right: auto;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.Menu
+header h2
 {
-    margin-right: auto;
-    margin-left: auto;
-    padding: auto;
-    background-color: rgba(192, 181, 25, 0.63);
-    width: 80%;
-    max-width: 500px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.Menu p
+header h3
 {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.FoodTitle
+header
 {
-    font-family: 'Satisfy', cursive;
-}
-.Food
-{
-    font-family: 'Satisfy', cursive;
-    width: 75%;
-    font-size: larger;
-    text-align: left;
-}
-.Price
-{
-    font-family: 'Satisfy', cursive;
-    text-align: right;
-    width: 25%;
-    
-}
-
-.Menudiv
-{
-    height: 30px;
+    background-color: goldenrod;
     width: 100%;
+    height: 80px;
+    top:0;
+    display: flex;
+    position:fixed;
+    opacity: 100%;
+    z-index: 2;
 }
 
-.headerFood
+/*Class*/
+
+
+
+/*Burger Button*/
+
+li {
+	list-style: none;
+}
+
+a {
+	display: block;
+	width: 100%;
+	height: 10vh;
+	text-decoration: none;
+	font-size: 4em;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.flex_column {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.felx_row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.movil {
+	width: 50%;
+	height: 100vh;
+}
+
+.btn_menu:hover
 {
-    justify-content:center;
-    display: flex;
+cursor: pointer;
+}
+
+#btn_menu,
+.btn_menu {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 3;
+}
+
+#btn_menu {
+		display: none;
+}
+
+.btn_menu {
+	width: 40px;
+	height: 40px;
+	color: red;
+}
+
+
+.btn_span {
+	position: absolute;
+	top:0;
+	width: 30px;
+	height: 5px;
+	background: #cc1616;
+	transition: all .3s ease;
+    border-radius: 30%;
+}
+
+
+.btn_span:nth-child(2) {
+	top: 10px
+}
+.btn_span:nth-child(3) {
+	top: 20px
+}
+#btn_menu:checked ~ .btn_menu #btn_span_1 {
+	top: 10px;
+	transform: rotate(45deg);
+}
+#btn_menu:checked ~ .btn_menu #btn_span_2{
+	opacity: 0;
+}
+#btn_menu:checked ~ .btn_menu #btn_span_3{
+	top:10px;
+	transform: rotate(-45deg);
+}
+
+
+.container_flex {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+    z-index: 0;
+    right:-250px ;
+}
+
+.container_menu {
+	width: 100%;
+	height: 100vh;
+}
+
+.container_menu {
+	position: absolute;
+	top: 0;
+	right: -100vw;
+	width: 45%;
+	height: 100vh;
+	background: black;
+	transition: all .5s ease;
+	z-index: 0;
+    margin-top: 80px;
+    }
+
+    .container_menu  li
+    {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 8px;
+    }
+
+#btn_menu:checked ~ .container_flex .container_menu {
+	right: 0;
+}
+
+/*Ends the burger-button style*/
+
+/*Menu division line*/
+
+.menudiv
+{
+    display: block;
+    background-color: black;
+    color: black;
+    height: 3px;
+}
+
+/*Container*/
+
+
+/*Here ends the menu division line*/
+
+/*Menu left division*/
+
+.Menu-left
+{
     
-    align-items: center;
+    width: 50%;
+    height:600px;
+    background-color: rgb(184, 134, 11,70%);
+    margin-top:80px;
+    justify-content: left;
+	border: solid 2px black;
+
 }
 
-.headerFood h2
+.FoodSection-title
 {
-    padding: 10px;
-}
-
-.Chall
-{
-    justify-content: right;
     display: flex;
-    align-items: flex-end;
-    font-family:'Satisfy',cursive;
 }
+
+.icon
+{
+    width: 40px;
+    height: 40px;
+}
+
+.FoodSection-element
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FoodSection-element  h4:last-of-type
+{
+margin-right: 6px;
+}
+
+#Order-input
+{
+    display: none;
+}
+
+
+/*Order button*/
+
+
+
+.SendAp
+{
+    display: flex;
+    height: 10px;
+    width: 60%;
+    margin: 1em auto;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border: solid 1px white;
+    min-height:10px;
+    min-width: 100px;
+    z-index: 10;
+}
+
+
+#order-input
+{
+    display:none;
+}
+
+#M-left
+{
+	display: flex;
+	flex-direction: column;
+}
+
+/*Here ends the menu-left division*/
